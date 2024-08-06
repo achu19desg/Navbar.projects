@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            fontFamily: {
+              font1:"Poppins",
+
+            },
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    <title>Tailnav</title>
+</head>
+<body>
+    <div>
+    <nav class="bg-slate-900 h-24 flex justify-between py-8 px-10 ">
+      <div class="flex gap-2">
+        <img class="w-10 h-6" src="./tailwind-css-icon.png" alt="">
+        <h1 class="text-xl text-white font-font1" >tailwindcss</h1>
+      </div>
+        
+        <div class=" flex gap-5 item-center">
+            <div class="flex item-center">
+            <ul class="hidden md:flex gap-5 text-white font-semibold item-center border-r border-gray px-6 ">
+            <li class="cursor-pointer hover:text-cyan-300">Docs</li>
+            <li class="cursor-pointer hover:text-cyan-300">Components</li>
+            <li class="cursor-pointer hover:text-cyan-300">Blog</li>
+            <li class="cursor-pointer hover:text-cyan-300">Show case</li>
+            </ul>
+        </div>
+        <div class="hidden md:flex relative">
+      <button><i class="fa-regular fa-moon fa-lg" style="color: #9299a5;"></i></button>
+      <span class="absolute right-[-8px] top-[-7px]"><i class="fa-solid fa-plus fa-sm" style="color: #95a0b1;"></i></span>
+    </div>
+    <div class="hidden md:flex flex-none">
+      <button><i class="fa-brands fa-github fa-lg" style="color: #969aa2;"></i></button>
+    </div>
+
+    <div class="flex gap-4 item-center mt-4 md:hidden">
+      <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #747983;"></i>
+      <i class="fa-solid fa-ellipsis-vertical fa-lg" style="color: #7e828b;"></i>
+    </div>
+    </nav>
+    </div>
+    
+</body>
+</html>
