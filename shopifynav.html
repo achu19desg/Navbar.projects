@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    <title>shopifynav</title>
+</head>
+<body>
+    <nav class="w-full bg-black">
+        <div class=" flex  h-24 py-6 px-3">
+            <!-- shop name -->
+            <div class="size-64 ml-3 mt-2 md:size-40 ml-3 mt-2">
+             <img class="" src="shopifylogo.png" alt="">
+            </div>
+            <!-- types -->
+             <div class="flex w-full">
+            <div class="flex gap-2 w-full">
+                <ul class="hidden lg:flex gap-8 px-8 py-4">
+                    <div class="flex items-center cursor-pointer hover:underline text-white ">
+                        <li>Solutions<i class="fa-solid fa-angle-down fa-xs ml-2" style="color: #f7f7f7;"></i></li>
+                     </div>
+
+                    <div class="flex items-center cursor-pointer hover:underline text-white ">
+                        <li>Pricing<i class="fa-solid fa-angle-down fa-xs ml-2" style="color: #f7f7f7;"></i></li>
+                    </div>
+
+                    <div class="flex items-center cursor-pointer hover:underline text-white ">
+                        <li>Resources<i class="fa-solid fa-angle-down fa-xs ml-2" style="color: #f7f7f7;"></i></li>
+                    </div>
+
+                    <div class="flex items-center cursor-pointer hover:underline text-white ">
+                        <li>What's new<i class="fa-solid fa-angle-down fa-xs ml-2" style="color: #f7f7f7;"></i></li>
+                    </div>
+                   
+                    
+                </ul>
+            </div>
+                   
+             <!-- login --> 
+              <div class="hidden lg:flex w-full justify-end">
+                 <div class="flex">
+                    <button class="text-white hover:underline px-3 py-4 mr-4">Log in</button>
+                 </div>
+                 <!-- trail free -->
+                  <div class="">
+                    <button class="flex bg-white hover:bg-gray-300 rounded-full font-bold px-4 py-4 ">Start free trail</button>
+                  </div>
+                </div>    
+            </div>
+
+            <div class=" flex w-full justify-end items-center lg:hidden">
+            <!-- small trail -->
+             <div>
+                <button class="flex text-white hover:underline font-semibold px-4">Start free trail</button>
+             </div>
+            <!-- 3line -->
+            <div>
+                <button class=" flex px-2 py-4 "><i class="fa-solid fa-bars fa-xl" style="color: #fcfcfd;"></i></button>
+                </div>
+            </div>
+
+            <!-- final -->
+        </div>
+    </nav>
+</body>
+</html>
